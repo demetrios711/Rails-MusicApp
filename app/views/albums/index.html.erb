@@ -1,0 +1,7 @@
+<h2>Band's Album List</h2>
+
+<ul>
+<%= render partial: 'list', :collection => @albums, as: :item %>
+</ul>
+
+<a href="<%=new_band_album_url%>"> Create New Album </a>

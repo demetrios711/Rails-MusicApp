@@ -1,0 +1,12 @@
+<li> 
+
+  <%= item.inspect %>
+  </br>
+  
+</li>
+  <form id="delete_album" action="<%= "albums/#{item.id}" %>" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
+    <input type="hidden" name="_method" value="delete" />
+    <input type="submit" value="Delete">
+  </form>
+  
